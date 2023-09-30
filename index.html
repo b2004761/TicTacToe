@@ -84,7 +84,15 @@
             } else {
                 msgRef.innerHTML = "&#x1F389; 'O' Wins";
             }
-
+            //New Game
+            newgameBtn.addEventListener("click", () => {
+                count = 0;
+                enableButtons();
+            });
+            restartBtn.addEventListener("click", () => {
+                count = 0;
+                enableButtons();
+            });
             // Play âm thanh chiến thắng
             winSound.play();
         };
@@ -93,7 +101,15 @@
         const drawFunction = () => {
             disableButtons();
             msgRef.innerHTML = "&#x1F60E; It's a Draw";
-
+            //New Game
+            newgameBtn.addEventListener("click", () => {
+                count = 0;
+                enableButtons();
+            });
+            restartBtn.addEventListener("click", () => {
+                count = 0;
+                enableButtons();
+            });
             // Play âm thanh hòa
             drawSound.play();
         };
